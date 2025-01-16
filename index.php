@@ -7,7 +7,7 @@
     <title>GuiJogosXbox360</title>
 </head>
 <body>
-    <button><a href="form-jogo-xbox-360.php">Adcionar jogo de xbox 360</a></button>
+    <button><a href="form-jogo-xbox-360.php" style="text-decoration: none;">Adcionar jogo de xbox 360</a></button>
     <?php require_once 'includes/lojas.php' ?>
     <h1>GuiJogosXbox360</h1>
     <hr>
@@ -21,7 +21,7 @@
                 echo 'Não existe nenhum jogo de xbox 360';
             } else { 
                 while ($reg=$busca->fetch_object()){
-                    echo "<tr><td><a href='pagina-jogo-xbox-360.php?i=$reg->id'><img src='$reg->imagem'></a></td><td>$reg->nome</td></tr>";
+                    echo "<tr><td><a href='pagina-jogo-xbox-360.php?i=$reg->id'><img src='$reg->imagem' width='140'></a></td><td>$reg->nome</td></tr>";
                 }
             }
         }
