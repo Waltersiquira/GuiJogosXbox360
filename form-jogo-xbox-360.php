@@ -27,12 +27,12 @@
     $imagem = $_GET['imagem'] ?? '';
     if (!empty($nome) and !empty($descricao) and !empty($preco) and !empty($imagem)){
         if ($lojas->query("INSERT INTO jogo_xbox360 VALUES (DEFAULT, '$nome', '$descricao', '$preco', '$imagem')") == true){
-            echo "Jogo de Xbox 360 Adcionado com Sucesso ✅";
+            echo "Jogo de Xbox 360 Adcionado com Sucesso ✅ <br>";
         } else {
-            echo 'erro ao insreir dados';
+            echo 'erro ao insreir dados <br>';
         }
     } else {
-        echo 'Adicione os Dados do Jogo de Xbox 360';
+        echo 'Adicione os Dados do Jogo de Xbox 360 <br>';
     }
     ?>
     <button><a href="index.php"><span class="material-symbols-outlined">arrow_back_ios</span></a></button>
